@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+android:background="#ffffff"
+    android:layout_height="fill_parent"
+    tools:context="com.rohan.admin.loginapp1.Training_add">
+
+
+    <Button
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/ic_action_calender"
+            android:id="@+id/datedialog"
+            android:layout_marginStart="36dp"
+            android:layout_toEndOf="@+id/add_date"
+            android:text="calendar"
+            android:textAllCaps="false"
+            android:background="@drawable/button_all"
+            android:layout_alignBottom="@+id/add_date"
+        android:layout_below="@+id/add_time" />
+
+    <EditText
+        android:id="@+id/add_activity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:hint="Activity Name"
+        android:padding="8dp"
+        android:singleLine="true"
+        android:inputType="textCapWords"
+        android:textSize="15dp"
+        android:textColorHint="@color/input_register_hint"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:inputType="time"
+        android:ems="10"
+        android:id="@+id/add_time"
+        android:background="#ffffff"
+        android:hint="  Time"
+        android:singleLine="true"
+        android:textSize="15dp"
+        android:layout_below="@+id/add_activity"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="188dp"
+        android:layout_height="40dp"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/add_date"
+        android:background="#ffffff"
+        android:hint="  Date"
+        android:singleLine="true"
+        android:textSize="15dp"
+        android:layout_below="@+id/add_activity"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="39dp" />
+
+    <Button
+        android:text="Document"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:id="@+id/document"
+        app:srcCompat="@drawable/ic_action_name"
+        android:background="@drawable/button_all"
+        android:textAllCaps="false"
+        android:layout_below="@+id/datedialog"
+        android:layout_alignStart="@+id/datedialog"
+
+        />
+
+    <EditText
+            android:id="@+id/info_activity"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="Information About Activity"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:inputType="textCapWords"
+            android:textSize="15dp"
+            android:textColorHint="@color/input_register_hint"
+        android:layout_below="@+id/document"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+            android:text="Document name"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/documentid"
+        android:layout_alignBaseline="@+id/document"
+        android:layout_alignBottom="@+id/document"
+        android:layout_toStartOf="@+id/datedialog"
+        android:layout_marginEnd="16dp" />
+
+    <Button
+            android:id="@+id/add"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff6861"
+            android:text="ADD"
+            android:textColor="@color/white"
+        android:layout_marginTop="58dp"
+        android:layout_below="@+id/info_activity"
+        android:layout_alignParentStart="true" />
+
+
+    <!-- Link to Login Screen -->
+
+
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="20dp"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/branch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="branch"
+        android:layout_weight="0.11"
+        android:textColor="#2e3237"
+        android:textSize="15dp" />
+
+</LinearLayout>

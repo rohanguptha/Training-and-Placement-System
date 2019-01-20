@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:gravity="center"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.rohan.admin.loginapp1.LoginActivity"
+    android:background="@drawable/kits_building">
+
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Sign In"
+            android:id="@+id/textView6"
+          android:gravity="center"
+            android:textColor="#ffffff"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_weight="0.25"
+            android:shadowColor="#7000"
+            android:shadowDx="12"
+            android:shadowRadius="8"
+            android:shadowDy="12"
+            android:textSize="35dp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:hint="@string/hint_email"
+        android:layout_marginTop="30dp"
+        android:inputType="textEmailAddress"
+        android:padding="8dp"
+        android:singleLine="true"
+      android:drawableLeft="@drawable/user"
+        android:textSize="15dp"
+        android:textColor="@color/input_login"
+        android:textColorHint="@color/input_login" />
+
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            android:padding="8dp"
+            android:textSize="15dp"
+            android:singleLine="true"
+            android:drawableLeft="@drawable/pass"
+            android:textColor="@color/input_login"
+            android:textColorHint="@color/input_login" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/imageView"
+            android:layout_alignParentStart="true">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student"
+                android:textColor="@color/white"
+                android:id="@+id/radiostudent"
+                android:buttonTint="#ffffff"
+                android:backgroundTint="#26ae90" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Admin"
+                android:textColor="@color/white"
+                android:id="@+id/radioadmin"
+                android:buttonTint="#ffffff"
+                android:backgroundTint="#26ae90" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Faculty"
+                android:textColor="@color/white"
+                android:id="@+id/radiofaculty"
+                android:buttonTint="#ffffff"
+                android:backgroundTint="#26ae90" />
+
+        </RadioGroup>
+    <!-- Login Button -->
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remember me"
+            android:id="@+id/saveLoginCheckBox"
+            android:textColor="#ffffff"
+            android:checked="false"
+            android:buttonTint="#ffffff" />
+
+        <Button
+        android:id="@+id/login_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/button_white"
+        android:text="@string/btn_login"
+        android:textColor="#ffffff" />
+
+    <!-- Link to Login Screen -->
+
+        <Button
+        android:id="@+id/sign_up"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dip"
+        android:background="@null"
+        android:text="@string/btn_link_to_register"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

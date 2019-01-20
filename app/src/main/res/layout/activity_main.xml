@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.rohan.admin.loginapp1.MainActivity"
+    android:background="#ffffff">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="800dp"
+    android:fillViewport="false"
+    android:id="@+id/scrollView">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Placement Summary "
+            android:id="@+id/textView2"
+            android:paddingTop="10dp"
+            android:layout_alignParentTop="true"
+            android:shadowColor="#7000"
+            android:shadowDx="12"
+            android:shadowRadius="8"
+            android:shadowDy="12"
+            android:layout_alignEnd="@+id/textView3" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="154dp"
+            android:layout_height="30dp"
+
+
+
+            android:layout_gravity="right"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_toEndOf="@+id/textView2" />
+
+        <com.github.mikephil.charting.charts.HorizontalBarChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="42dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/cse"
+        android:visibility="gone"
+        android:layout_marginTop="54dp"
+        android:layout_below="@+id/chart"
+        android:layout_toStartOf="@+id/textView2" />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="4"
+        android:id="@+id/ece"
+        android:visibility="gone"
+        android:layout_alignTop="@+id/cse"
+        android:layout_toEndOf="@+id/cse"
+        android:layout_marginStart="27dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="5"
+        android:id="@+id/mech"
+        android:visibility="gone"
+        android:layout_alignTop="@+id/ece"
+        android:layout_toEndOf="@+id/ece"
+        android:layout_marginStart="19dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="6"
+        android:id="@+id/civil"
+        android:visibility="gone"
+        android:layout_below="@+id/cse"
+        android:layout_toStartOf="@+id/mech"
+        android:layout_marginTop="29dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="7"
+        android:id="@+id/eee"
+        android:visibility="gone"
+        android:layout_alignTop="@+id/civil"
+        android:layout_toEndOf="@+id/mech" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="8"
+        android:id="@+id/eie"
+        android:visibility="gone"
+        android:layout_alignTop="@+id/civil"
+        android:layout_alignStart="@+id/cse" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="9"
+        android:visibility="gone"
+        android:id="@+id/it"
+        android:layout_above="@+id/eee"
+        android:layout_centerHorizontal="true" />
+
+        <TextView
+        android:layout_width="79dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/total"
+        android:textSize="15dp"
+            android:textColor="#ff6861"
+        android:layout_marginStart="18dp"
+        android:layout_below="@+id/chart"
+        android:layout_toEndOf="@+id/textView3"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="Total No.of Placements :  "
+    android:id="@+id/textView3"
+    android:textSize="15dp"
+        android:layout_alignTop="@+id/total"
+        android:layout_centerHorizontal="true" />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="2016"
+        android:visibility="gone"
+        android:id="@+id/year"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/textView3" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="The institute has a full-fledged Training and Placement Cell and it is able to provide campus placements to our young budding engineers by inviting a good number of organizations to the Institute for placements. Multi National Companies have accredited the Institute for providing placements basing on the Academic performance of our students and Infrastructural facilities that are available for the overall growth of the prospecting engineers.
+The Institute updates the curriculum as per the changing needs of the society and ensures effective instructions. We believe that preparation of a student for engineering profession is not complete, without educational visits to industry and a period of training in premier Engineering Establishments to reinforce the concepts they have learnt in regular class room and laboratory instruction. Taking into consideration of these facts, the T and P cell has developed its liaison with the industry. Further we arrange short duration training programmes in consultation with organizations of national repute.
+The institute is confident to extend an open invitation to engineering organizations to evaluate its graduates for professional competence. The institute can undertake screening and short listing a panel of candidates on the basis of the qualitative requirements of the employing organization. During the current academic year, the cell is aiming to reach 100% placements to all the eligible students of the existing branches."
+            android:id="@+id/textView7"
+            android:textSize="15dp"
+          android:layout_below="@id/textView3"
+            android:paddingTop="10dp"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</ScrollView>
+
+
+</RelativeLayout>

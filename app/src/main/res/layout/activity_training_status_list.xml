@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rohan.admin.loginapp1.TrainingStatusList">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:visibility="gone"
+        android:id="@+id/tsactivity"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/tsdate"
+        android:visibility="gone"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/list1"
+        android:dividerHeight="5dp"
+        android:layout_marginBottom="50dp"
+        android:layout_below="@+id/tsactivity"
+        android:layout_toStartOf="@+id/tsdate"
+        android:layout_alignParentEnd="true"
+        android:choiceMode="multipleChoice"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="empty"
+        android:id="@+id/pid"
+android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:id="@+id/reg_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff6861"
+        android:text="POST ATTENDANCE"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/rollno" />
+
+</RelativeLayout>

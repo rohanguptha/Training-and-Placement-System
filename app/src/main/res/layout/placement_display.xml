@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    >
+
+    <TextView
+        android:id="@+id/cname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.10"
+        android:text=" Company"
+        android:paddingLeft="5dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#2e3237"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/ctime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="  Time"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#2e3237"
+        android:layout_weight="0.70"
+
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/cdate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.90"
+        android:text="  Date"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#2e3237"
+        android:textSize="15dp" />
+
+</LinearLayout>

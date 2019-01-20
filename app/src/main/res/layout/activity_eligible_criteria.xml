@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#ffffff"
+    tools:context="com.rohan.admin.loginapp1.Eligible_criteria">
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/csebox1"
+        android:checked="false"
+        android:text="CSE"
+        android:onClick="selectItem"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/eiebox1"
+        android:buttonTint="#ff6861" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:id="@+id/csebutton"
+        android:onClick="finalSelection"
+        android:background="@drawable/button_pressed"
+        android:textColor="#ffffff"
+       android:layout_below="@+id/rank"
+        android:layout_alignEnd="@+id/rank"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ecebox1"
+        android:onClick="selectItem"
+        android:checked="false"
+        android:text="ECE"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/mechbox1"
+        android:buttonTint="#ff6861" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mechbox1"
+        android:onClick="selectItem"
+        android:checked="false"
+        android:text="MECH"
+        android:layout_below="@+id/eeebox1"
+        android:layout_centerHorizontal="true"
+        android:buttonTint="#ff6861" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/civilbox1"
+        android:checked="false"
+        android:onClick="selectItem"
+        android:text="CIVIL"
+        android:buttonTint="#ff6861"
+        android:layout_alignTop="@+id/mechbox1"
+        android:layout_toEndOf="@+id/mechbox1"
+        android:layout_marginStart="27dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/male"
+        android:checked="false"
+        android:onClick="selectItem"
+        android:text="MALE"
+        android:buttonTint="#ff6861"
+        android:layout_below="@+id/itbox1"
+        android:layout_alignStart="@+id/itbox1" />
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/female"
+        android:checked="false"
+        android:onClick="selectItem"
+        android:text="FEMALE"
+        android:buttonTint="#ff6861"
+        android:layout_below="@+id/itbox1"
+        android:layout_alignStart="@+id/civilbox1" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/itbox1"
+        android:onClick="selectItem"
+        android:checked="false"
+        android:text="IT"
+        android:buttonTint="#ff6861"
+        android:layout_below="@+id/mechbox1"
+        android:layout_alignStart="@+id/mechbox1" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eeebox1"
+        android:checked="false"
+        android:onClick="selectItem"
+        android:text="EEE"
+
+        android:layout_below="@+id/ecebox1"
+        android:layout_alignEnd="@+id/ecebox1"
+        android:buttonTint="#ff6861" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eiebox1"
+        android:checked="false"
+        android:text="EIE"
+        android:onClick="selectItem"
+        android:layout_above="@+id/civilbox1"
+        android:layout_alignStart="@+id/civilbox1"
+        android:buttonTint="#ff6861" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:visibility="gone"
+        android:id="@+id/final_result"
+        android:layout_below="@+id/ecebox1"
+        android:layout_toEndOf="@+id/csebutton" />
+    <EditText
+        android:id="@+id/ssc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:hint="SSC%"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textSize="15dp"
+        android:textColor="@color/input_register"
+        android:textColorHint="@color/input_register_hint"
+        android:layout_below="@+id/compname"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/inter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:hint="Inter%"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/input_register"
+        android:textColorHint="@color/input_register_hint"
+        android:layout_below="@+id/ssc"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/btech"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:hint="Btech%"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textSize="15dp"
+        android:textColor="@color/input_register"
+        android:textColorHint="@color/input_register_hint"
+        android:layout_below="@+id/inter"
+        android:layout_alignParentEnd="true"
+        />
+
+
+    <EditText
+        android:id="@+id/rank"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:hint="Eamcet Rank"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:textSize="15dp"
+        android:singleLine="true"
+        android:textColor="@color/input_register"
+        android:textColorHint="@color/input_register_hint"
+        android:layout_below="@+id/btech"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="38dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Department:"
+        android:id="@+id/textView"
+        android:layout_below="@+id/ecebox1"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Gender:"
+        android:id="@+id/textView1"
+        android:layout_below="@+id/itbox1"
+        android:layout_alignEnd="@+id/textView" />
+
+    <EditText
+        android:id="@+id/compname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:hint="Company Name"
+        android:inputType="text"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textSize="15dp"
+        android:textColor="@color/input_register"
+        android:textColorHint="@color/input_register_hint"
+        android:layout_below="@+id/male"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp" />
+
+</RelativeLayout>

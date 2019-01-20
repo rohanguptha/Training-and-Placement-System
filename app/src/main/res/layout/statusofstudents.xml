@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    >
+
+    <TextView
+        android:id="@+id/erollno"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.10"
+        android:text=" rollno"
+        android:paddingLeft="5dp"
+        android:textColor="#2e3237"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/ename"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="name"
+
+        android:textColor="#2e3237"
+        android:layout_weight="0.70"
+
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/ebranch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.90"
+        android:text="branch"
+
+        android:textColor="#2e3237"
+        android:textSize="15dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:focusable="false"
+        android:clickable="false"
+        android:buttonTint="#ff6861"
+        android:id="@+id/checkBox" />
+</LinearLayout>

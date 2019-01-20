@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    >
+
+    <TextView
+        android:id="@+id/tactivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.10"
+        android:text=" Activity"
+        android:paddingLeft="5dp"
+        android:textColor="#2e3237"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/ttime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Time"
+
+        android:textColor="#2e3237"
+        android:layout_weight="0.70"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/tdate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.90"
+        android:text="     Date"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#2e3237"
+        android:textSize="15dp" />
+    <TextView
+        android:id="@+id/pdfname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="    pdf"
+
+        android:visibility="gone"
+        android:textColor="#2e3237"
+        android:textSize="20dp" />
+
+</LinearLayout>

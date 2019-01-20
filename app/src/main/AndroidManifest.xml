@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rohan.admin.loginapp1">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".FirstActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:label="Register"
+            android:parentActivityName=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HomeActivity"
+            android:label="Student Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TrainingActivity"
+            android:label="ACTIVITY LIST"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PlacementActivity"
+            android:label="COMPANY LIST"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AdminHomeActivity"
+            android:label="TPO"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Student_Profile_Admin"
+            android:label="Student&apos;s Details"
+            android:parentActivityName=".AdminHomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Training_Admin"
+            android:label="TPO"
+            android:parentActivityName=".AdminHomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Placement_Admin"
+            android:label="TPO"
+            android:parentActivityName=".AdminHomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity_update"
+            android:label="LIST OF ACTIVITIES"
+            android:parentActivityName=".Training_Admin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Training_add"
+            android:label="TPO"
+            android:parentActivityName=".Activity_update"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Training_del"
+            android:label="TPO"
+            android:parentActivityName=".Activity_update"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FacultyHomeActivity"
+            android:label="LIST OF STUDENTS TO VERIFY"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Training_edit"
+            android:label="TPO"
+            android:parentActivityName=".Activity_update"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Company_update"
+            android:label="LIST OF COMPANIES"
+            android:parentActivityName=".Placement_Admin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Placement_add"
+            android:label="TPO"
+            android:parentActivityName=".Company_update"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Placement_edit"
+            android:label="TPO"
+            android:parentActivityName=".Company_update"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Placement_del"
+            android:label="TPO"
+            android:parentActivityName=".Company_update"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Student_verify"
+            android:label="TPO"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Register_scrolling"
+            android:label="Register"
+            android:parentActivityName=".Student_verify"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Placed_student_details"
+            android:label="TPO"
+            android:parentActivityName=".Placement_Admin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".VerifyStudentActivity"
+            android:label="DETAILS OF STUDENT"
+            android:parentActivityName=".FacultyHomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Myprofile_Student"
+            android:label="MY PROFILE"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TrainingActivity_Info"
+            android:label="DETAILS OF ACTIVITY"
+            android:parentActivityName=".TrainingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PlacementActivity_Info"
+            android:label="DETAILS OF COMPANY"
+            android:parentActivityName=".PlacementActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Myactivities_Student"
+            android:label="MY ACTIVITIES"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Mycompany_Student"
+            android:label="REGISTERED COMPANIES"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EnrolledStudentList"
+            android:label="SELECT ACTIVITY"
+            android:parentActivityName=".Training_Admin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ListofBranch"
+            android:label="LIST OF BRANCHES"
+            android:parentActivityName=".EnrolledStudentList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TrainingActivity_admin_info"
+            android:label="DETAILS OF ACTIVITY"
+            android:parentActivityName=".Activity_update"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ListofStudents"
+            android:label="LIST OF STUDENTS"
+            android:parentActivityName=".ListofBranch"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PlacementActivity_admin_info"
+            android:label="DETAILS OF COMPANY"
+            android:parentActivityName=".Company_update"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Search_Student"
+            android:label="DETAILS OF STUDENT"
+            android:parentActivityName=".Student_Profile_Admin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TrainingStatusUpdate"
+            android:label="SELECT ACTIVITY"
+            android:parentActivityName=".Training_Admin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TrainingStatusList"
+            android:label="SELECT STUDENTS"
+            android:parentActivityName=".TrainingStatusUpdate"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Eligible_criteria"
+            android:label="ELIGIBLE CRITERIA"
+            android:parentActivityName=".Placement_Admin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LIST"
+            android:label="ELIGIBLE STUDENTS"
+            android:parentActivityName=".Eligible_criteria"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity_Attendance"
+            android:label="SELECT ACTIVITY"
+            android:parentActivityName=".Training_Admin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Attendance_of_Students"
+            android:label="ATTENDANCE"
+            android:parentActivityName=".Activity_Attendance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PlacementStatusUpdate"
+            android:label="SELECT COMPANY"
+            android:parentActivityName=".Placement_Admin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PlacementStatusList"
+            android:label="SELECT STUDENTS"
+            android:parentActivityName=".PlacementStatusUpdate"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Placement_Attendance"
+            android:label="SELECT COMPANY"
+            android:parentActivityName=".Placement_Admin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Attendance_Company_Students"
+            android:label="ATTENDANCE"
+            android:parentActivityName=".Placement_Attendance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Update_Placed_Student_Details"
+            android:label="SELECT COMPANY"
+            android:parentActivityName=".Placement_Admin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ListofStudents_to_place"
+            android:label="SELECT PLACED STUDENTS"
+            android:parentActivityName=".Update_Placed_Student_Details"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ListofStudentsPlaced"
+            android:label="PLACED STUDENT DETAILS"
+            android:parentActivityName=".Placed_student_details"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="Login"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".AdminAddNotifications" />
+        <activity android:name=".StudentsAlerts" />
+        <activity
+            android:name=".pdfview"
+            android:label="PdfView"
+            android:parentActivityName=".TrainingActivity_admin_info"></activity>
+        <activity android:name=".TEMP"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:background="#ffffff"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_height="fill_parent"
+    tools:context="com.rohan.admin.loginapp1.RegisterActivity"
+    android:weightSum="1">
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Training Activity"
+        android:id="@+id/training_txt"
+        android:textSize="25dp"
+
+        />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        >
+
+
+        <Button
+            android:onClick="training"
+            android:layout_marginTop="35dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Training Activity"
+            android:id="@+id/training_avtivity"
+            android:background="@drawable/button_pressed"
+            android:layout_marginBottom="20dp"
+            android:textColor="#ffffff" />
+        <Button
+            android:onClick="training"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Training Status Update"
+            android:id="@+id/training_status_update"
+            android:background="@drawable/button_pressed"
+
+            android:layout_marginBottom="20dp"
+            android:textColor="#ffffff" />
+
+
+        <Button
+            android:onClick="training"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Activity Attendance"
+            android:id="@+id/training_attendance"
+            android:background="@drawable/button_pressed"
+
+            android:layout_marginBottom="20dp"
+            android:textColor="#ffffff" />
+        <Button
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Enrolled Student List"
+            android:id="@+id/enrolled_student_list"
+            android:background="@drawable/button_pressed"
+            android:onClick="training"
+
+            android:textColor="#ffffff" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

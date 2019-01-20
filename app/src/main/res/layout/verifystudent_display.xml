@@ -1,0 +1,1665 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/rollnod"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Rollno:"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textColor="#2e3237"
+        android:layout_weight="0.19"
+        android:textSize="20dp"
+        android:paddingLeft="8dp"
+        android:background="#78aecb"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/svbtech2percent" />
+
+
+    <TextView
+        android:id="@+id/named"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:paddingTop="20dp"
+        android:layout_weight="0.27"
+        android:textColor="#2e3237"
+        android:paddingBottom="20dp"
+        android:textSize="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rollnod"
+        android:layout_toStartOf="@+id/svname" />
+
+
+    <TextView
+        android:id="@+id/emaild"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        android:layout_weight="0.11"
+        android:textColor="#2e3237"
+        android:textSize="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/named"
+        android:layout_toStartOf="@+id/svemail" />
+
+    <TextView
+        android:id="@+id/branchd"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Branch:"  android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_below="@+id/emaild"
+        android:layout_weight="0.11"
+        android:textColor="#2e3237"
+        android:textSize="20dp"
+        android:layout_toStartOf="@+id/svemail" />
+
+    <TextView
+        android:id="@+id/yearpassbtchd"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Year of Passing:"  android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_below="@+id/branchd"
+        android:layout_weight="0.11"
+        android:textColor="#2e3237"
+        android:textSize="20dp"
+        android:layout_toStartOf="@+id/svfathername" />
+
+    <TextView
+        android:id="@+id/rankd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eamcet/Ecet Rank:"  android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_below="@+id/yearpassbtchd"
+        android:layout_weight="0.11"
+        android:textColor="#2e3237"
+        android:textSize="20dp"
+        android:layout_toStartOf="@+id/sv" />
+
+    <TextView
+        android:id="@+id/surnamed"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Sername:"  android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_below="@+id/rankd"
+        android:layout_weight="0.11"
+        android:textColor="#2e3237"
+        android:textSize="20dp"
+        android:layout_toStartOf="@+id/svdiplomamarks" />
+
+
+
+
+    <TextView
+        android:id="@+id/fullnamed"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Fullname:"  android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_below="@+id/surnamed"
+        android:layout_weight="0.11"
+        android:textColor="#2e3237"
+        android:textSize="20dp"
+        android:layout_alignEnd="@+id/fathernamed" />
+    <TextView
+        android:id="@+id/dobd"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Dob:"  android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_below="@+id/fullnamed"
+        android:layout_weight="0.11"
+        android:textColor="#2e3237"
+        android:textSize="20dp"
+        android:layout_toStartOf="@+id/svbtech1marks" />
+
+
+    <TextView
+        android:id="@+id/birthplaced"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Place of birth:"
+        android:layout_below="@+id/dobd"  android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_weight="0.11"
+        android:textColor="#2e3237"
+        android:textSize="20dp"
+        android:layout_toStartOf="@+id/svfocc" />
+    <TextView
+        android:id="@+id/aged"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Age:"
+        android:layout_below="@+id/birthplaced"
+        android:layout_weight="0.11"  android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textColor="#2e3237"
+        android:textSize="20dp"
+        android:layout_toStartOf="@+id/svfcellno" />
+    <TextView
+        android:id="@+id/genderd"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Gender:"
+        android:layout_below="@+id/aged"
+        android:layout_weight="0.11"  android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textColor="#2e3237"
+        android:textSize="20dp"
+        android:layout_alignEnd="@+id/birthplaced" />
+    <TextView
+        android:id="@+id/casted"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Caste:"  android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_below="@+id/genderd"
+        android:layout_weight="0.11"
+        android:textColor="#2e3237"
+        android:textSize="20dp"
+        android:layout_toStartOf="@+id/svfcellno" />
+
+
+    <TextView
+        android:id="@+id/religiond"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Religion:"  android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_below="@+id/casted"
+        android:layout_weight="0.11"
+        android:textColor="#2e3237"
+        android:textSize="20dp"
+        android:layout_toStartOf="@+id/svfocc" />
+
+
+
+
+    <TextView
+        android:id="@+id/aadharnod"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Aadhar no:"  android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_below="@+id/religiond"
+        android:layout_weight="0.11"
+        android:textColor="#2e3237"
+        android:textSize="20dp"
+        android:layout_toStartOf="@+id/svfocc" />
+    <TextView
+        android:id="@+id/sscpassd"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="SSC year of passing:"  android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_below="@+id/aadharnod"
+        android:layout_weight="0.11"
+        android:textColor="#2e3237"
+        android:textSize="20dp"
+        android:layout_toStartOf="@+id/svaadharno" />
+
+    <TextView
+        android:id="@+id/sscmarksd"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="SSC Marks:"  android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_below="@+id/sscpassd"
+        android:layout_weight="0.11"
+        android:textColor="#2e3237"
+        android:textSize="20dp"
+        android:layout_toStartOf="@+id/svsscpassd" />
+    <TextView
+        android:id="@+id/sscpercentd"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="SSC Aggregate:"  android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_below="@+id/sscmarksd"
+        android:layout_weight="0.11"
+        android:textColor="#2e3237"
+        android:textSize="20dp"
+        android:layout_alignEnd="@+id/sscmarksd" />
+    <TextView
+        android:id="@+id/sscattemptd"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="SSC(no. of attempts):"  android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_below="@+id/sscpercentd"
+        android:layout_weight="0.11"
+        android:textColor="#2e3237"
+        android:textSize="20dp"
+        android:layout_toStartOf="@+id/svsscpercent" />
+
+    <TextView
+        android:id="@+id/interyearpassd"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Inter year of passing:"  android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_below="@+id/sscattemptd"
+        android:layout_weight="0.11"
+        android:textColor="#2e3237"
+        android:textSize="20dp"
+        android:layout_toStartOf="@+id/svinteryearpass" />
+
+    <TextView
+        android:id="@+id/intermarksd"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Inter marks:"  android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_below="@+id/interyearpassd"
+        android:layout_weight="0.11"
+        android:textColor="#2e3237"
+        android:textSize="20dp"
+        android:layout_toStartOf="@+id/svdiplomamarks" />
+    <TextView
+        android:id="@+id/interpercentd"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Inter aggregate:"  android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_below="@+id/intermarksd"
+        android:layout_weight="0.11"
+        android:textColor="#2e3237"
+        android:textSize="20dp"
+        android:layout_toStartOf="@+id/svintermarks" />
+    <TextView
+        android:id="@+id/interattemptd"
+        android:layout_width="200dp"  android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_height="wrap_content"
+        android:text="Inter(no of attempts):"
+        android:layout_below="@+id/interpercentd"
+        android:layout_weight="0.11"
+        android:textColor="#2e3237"
+        android:textSize="20dp"
+        android:layout_toStartOf="@+id/svinterpercent" />
+    <TextView
+        android:id="@+id/diplomayearpassd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diploma year of passing:"
+        android:layout_below="@+id/interattemptd"
+        android:layout_weight="0.11"  android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textColor="#2e3237"
+        android:textSize="20dp"
+        android:layout_alignEnd="@+id/interattemptd" />
+    <TextView
+        android:id="@+id/diplomamarksd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diploma marks:"  android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_below="@+id/diplomayearpassd"
+        android:layout_weight="0.11"
+        android:textColor="#2e3237"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/diplomapercentd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diploma Aggregate:"  android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_below="@+id/diplomamarksd"
+        android:layout_weight="0.11"
+        android:textColor="#2e3237"
+        android:textSize="20dp"
+        android:layout_toStartOf="@+id/svdiplomamarks" />
+    <TextView
+        android:id="@+id/diplomaattemptd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diploma(no of attempts):"
+        android:layout_below="@+id/diplomapercentd"
+        android:layout_weight="0.11"  android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textColor="#2e3237"
+        android:textSize="20dp"
+        android:layout_toStartOf="@+id/svdiplomapercent" />
+    <TextView
+        android:id="@+id/btech1yearpassd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I-YEAR(year of passing):"
+        android:layout_below="@+id/diplomaattemptd"
+        android:layout_weight="0.11"  android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textColor="#2e3237"
+        android:textSize="20dp"
+        android:layout_toStartOf="@+id/svdiplomaattempt" />
+
+    <TextView
+        android:id="@+id/btech1marksd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I-YEAR marks:"  android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_below="@+id/btech1yearpassd"
+        android:layout_weight="0.11"
+        android:textColor="#2e3237"
+        android:textSize="20dp"
+        android:layout_alignStart="@+id/btech1yearpassd"
+        android:layout_alignEnd="@+id/btech1yearpassd" />
+    <TextView
+        android:id="@+id/btech1percentd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I-YEAR aggregate:"
+        android:layout_below="@+id/btech1marksd"
+        android:layout_weight="0.11"  android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textColor="#2e3237"
+        android:textSize="20dp"
+        android:layout_toStartOf="@+id/svbtech1marks"
+        android:layout_alignEnd="@+id/btech2imarksd" />
+    <TextView
+        android:id="@+id/btech1attemptd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I-YEAR(no of attempts):"
+        android:layout_below="@+id/btech1percentd"
+        android:layout_weight="0.11"
+        android:textColor="#2e3237"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textSize="20dp"
+        android:layout_alignEnd="@+id/btech1percentd" />
+    <TextView
+        android:id="@+id/btech1backlogd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I-YEAR(backlogs):"  android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_below="@+id/btech1attemptd"
+        android:layout_weight="0.11"
+        android:textColor="#2e3237"
+        android:textSize="20dp"
+        android:layout_alignEnd="@+id/btech1attemptd" />
+    <TextView
+        android:id="@+id/btech2yearpassd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="II-1-YEAR(year of passing):"
+        android:layout_below="@+id/btech1backlogd"
+        android:layout_weight="0.11"  android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textColor="#2e3237"
+        android:textSize="20dp"
+        android:layout_alignEnd="@+id/btech1backlogd" />
+    <TextView
+        android:id="@+id/btech2marksd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="II-1-YEAR(marks):"  android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_below="@+id/btech2yearpassd"
+        android:layout_weight="0.11"
+        android:textColor="#2e3237"
+        android:textSize="20dp"
+        android:layout_alignEnd="@+id/btech2yearpassd" />
+
+    <TextView
+        android:id="@+id/btech2percentd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="II-YEAR aggregate:"  android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_below="@+id/btech2marksd"
+        android:textColor="#2e3237"
+        android:layout_weight="0.19"
+        android:textSize="20dp"
+        android:layout_alignEnd="@+id/btech2marksd" />
+    <TextView
+        android:id="@+id/btech2attemptd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="II-1-YEAR(no of attempts):"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_below="@+id/btech2percentd"
+        android:textColor="#2e3237"
+        android:layout_weight="0.19"
+        android:textSize="20dp"
+        android:layout_alignEnd="@+id/btech2percentd" />
+
+    <TextView
+        android:id="@+id/btech2backlogd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="II-1-YEAR(Backlogs):"
+        android:layout_below="@+id/btech2attemptd"
+        android:textColor="#2e3237"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_weight="0.19"
+        android:textSize="20dp"
+        android:layout_toStartOf="@+id/svbtech2imarks" />
+    <TextView
+        android:id="@+id/btech2iyearpassd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="II-2-YEAR(Year of passing):"
+        android:layout_below="@+id/btech2backlogd"
+        android:layout_weight="0.27"
+        android:textColor="#2e3237"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textSize="20dp"
+        android:layout_toStartOf="@+id/svbtech2imarks" />
+    <TextView
+        android:id="@+id/btech2imarksd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="II-2-YEAR Marks:"
+        android:layout_below="@+id/btech2iyearpassd"
+        android:layout_weight="0.27"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textColor="#2e3237"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/btech2ipercentd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="II-2-YEAR Aggregate:"
+        android:layout_below="@+id/btech2imarksd"
+        android:layout_weight="0.27"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textColor="#2e3237"
+        android:textSize="20dp"
+        android:layout_toStartOf="@+id/svbtech2imarks" />
+    <TextView
+        android:id="@+id/btech2iattemptd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="II-2-YEAR(no of attempts):"
+        android:layout_below="@+id/btech2ipercentd"
+        android:layout_weight="0.27"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textColor="#2e3237"
+
+        android:textSize="20dp"
+        android:layout_toStartOf="@+id/svbtech2imarks" />
+    <TextView
+        android:id="@+id/btech2ibacklogd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="II-2-YEAR(Backlogs):"
+        android:layout_below="@+id/btech2iattemptd"
+        android:layout_weight="0.27"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textColor="#2e3237"
+
+        android:textSize="20dp"
+        android:layout_toStartOf="@+id/svbtech2iattempt" />
+
+
+    <TextView
+        android:id="@+id/btech3yearpassd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="III-1-YEAR(year of passing):"
+        android:layout_below="@+id/btech2ibacklogd"
+        android:layout_weight="0.11"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textColor="#2e3237"
+        android:textSize="20dp"
+        android:layout_toStartOf="@+id/svbtech2ibacklog" />
+    <TextView
+        android:id="@+id/btech3marksd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="III-1-YEAR(marks):"
+        android:layout_below="@+id/btech3yearpassd"
+        android:layout_weight="0.11"
+        android:textColor="#2e3237"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textSize="20dp"
+        android:layout_toStartOf="@+id/svbtech3yearpass" />
+
+    <TextView
+        android:id="@+id/btech3percentd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="III-1-YEAR Aggregate:"
+        android:layout_below="@+id/btech3marksd"
+        android:textColor="#2e3237"
+        android:layout_weight="0.19"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textSize="20dp"
+        android:layout_toStartOf="@+id/svbtech3marks" />
+    <TextView
+        android:id="@+id/btech3attemptd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="III-1-YEAR(no of attempts):"
+        android:layout_below="@+id/btech3percentd"
+        android:textColor="#2e3237"
+        android:layout_weight="0.19"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:id="@+id/btech3backlogd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="III-1-YEAR(Backlogs):"
+        android:layout_below="@+id/btech3attemptd"
+        android:textColor="#2e3237"
+        android:layout_weight="0.19"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/btech3iyearpassd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="III-2-YEAR(year of passing):"
+        android:layout_below="@+id/btech3backlogd"
+        android:layout_weight="0.27"
+        android:textColor="#2e3237"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/btech3imarksd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="III-2-YEAR marks:"
+        android:layout_below="@+id/btech3iyearpassd"
+        android:layout_weight="0.27"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textColor="#2e3237"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/btech3ipercentd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="III-2-YEAR Aggregate:"
+        android:layout_below="@+id/btech3imarksd"
+        android:layout_weight="0.27"
+        android:textColor="#2e3237"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/btech3iattemptd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="III-2-YEAR(no of attempts):"
+        android:layout_below="@+id/btech3ipercentd"
+        android:layout_weight="0.27"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textColor="#2e3237"
+
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/btech3ibacklogd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="III-2-YEAR(Backlogs):"
+        android:layout_below="@+id/btech3iattemptd"
+        android:layout_weight="0.27"
+        android:textColor="#2e3237"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/fathernamed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Father name:"
+        android:layout_below="@+id/btech3ibacklogd"
+        android:layout_weight="0.27"
+        android:textColor="#2e3237"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/foccd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Occupation:"
+        android:layout_below="@+id/fathernamed"
+        android:layout_weight="0.27"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textColor="#2e3237"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/forgd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Organization:"
+        android:layout_below="@+id/foccd"
+        android:layout_weight="0.27"
+        android:textColor="#2e3237"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textSize="20dp" />
+
+
+
+    <TextView
+        android:id="@+id/fdesd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Designation:"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_below="@+id/forgd"
+        android:layout_weight="0.27"
+        android:textColor="#2e3237"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/fcellnod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone no:"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_below="@+id/fdesd"
+        android:layout_weight="0.27"
+        android:textColor="#2e3237"
+        android:textSize="20dp" />
+
+
+
+
+
+    <TextView
+        android:id="@+id/mothernamed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mother name:"
+        android:layout_below="@+id/fcellnod"
+        android:layout_weight="0.27"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textColor="#2e3237"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/moccd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Occupation:"
+        android:layout_below="@+id/mothernamed"
+        android:layout_weight="0.27"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textColor="#2e3237"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/morgd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Organization:"
+        android:layout_below="@+id/moccd"
+        android:layout_weight="0.27"
+        android:textColor="#2e3237"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textSize="20dp" />
+
+
+
+    <TextView
+        android:id="@+id/mdesd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Designation:"
+        android:layout_below="@+id/morgd"
+        android:layout_weight="0.27"
+        android:textColor="#2e3237"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/mcellnod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone no:"
+        android:layout_below="@+id/mdesd"
+        android:layout_weight="0.27"
+        android:textColor="#2e3237"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/addressd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="address:"
+        android:layout_below="@+id/mcellnod"
+        android:layout_weight="0.27"
+        android:textColor="#2e3237"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/stated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="state:"
+        android:layout_below="@+id/addressd"
+        android:layout_weight="0.27"
+        android:textColor="#2e3237"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/pincoded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pincode:"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_below="@+id/stated"
+        android:layout_weight="0.27"
+        android:textColor="#2e3237"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/scellnod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student cell no:"
+        android:layout_below="@+id/pincoded"
+        android:layout_weight="0.27"
+        android:textColor="#2e3237"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textSize="20dp" />
+
+
+
+
+
+
+
+
+
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="rollno"
+        android:id="@+id/svrollno"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:singleLine="true"
+        android:layout_toEndOf="@+id/named"
+        android:background="#78aecb"
+        android:layout_alignBottom="@+id/rollnod" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget"
+        android:text="name"
+        android:id="@+id/svname"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:singleLine="true"
+        android:layout_toEndOf="@+id/emaild"
+        android:layout_alignTop="@+id/named"
+        android:layout_above="@+id/emaild" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        android:text="email"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/svemail"
+        android:layout_toEndOf="@+id/rollnod"
+        android:layout_below="@+id/named"
+        android:layout_above="@+id/branchd"
+        android:layout_alignStart="@+id/svyearofpassbtch" />
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="branch"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:singleLine="true"
+        android:id="@+id/svbranch"
+        android:layout_alignBottom="@+id/branchd"
+        android:layout_toEndOf="@+id/branchd"
+        android:layout_alignTop="@+id/branchd"
+        android:layout_alignStart="@+id/svyearofpassbtch" />
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="year of passing"
+        android:singleLine="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/svyearofpassbtch"
+        android:layout_alignBottom="@+id/yearpassbtchd"
+        android:layout_toEndOf="@+id/rankd"
+        android:layout_alignTop="@+id/yearpassbtchd" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="rank"
+        android:singleLine="true"
+        android:id="@+id/svrank"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_alignBottom="@+id/rankd"
+        android:layout_toEndOf="@+id/rankd"
+        android:layout_alignTop="@+id/rankd" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="surname"
+        android:singleLine="true"
+        android:id="@+id/svsurname"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_alignBottom="@+id/surnamed"
+        android:layout_toEndOf="@+id/surnamed"
+        android:layout_alignTop="@+id/surnamed" />
+
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="fullname"
+        android:singleLine="true"
+        android:id="@+id/svfullname"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_alignBottom="@+id/fullnamed"
+        android:layout_toEndOf="@+id/surnamed"
+        android:layout_alignTop="@+id/fullnamed" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="dob"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:singleLine="true"
+        android:id="@+id/svdob"
+        android:layout_alignBottom="@+id/dobd"
+        android:layout_toEndOf="@+id/rankd"
+        android:layout_below="@+id/fullnamed" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="place of birth"
+        android:singleLine="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/svbirthplace"
+        android:layout_alignBottom="@+id/birthplaced"
+        android:layout_toEndOf="@+id/dobd" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="age"
+        android:singleLine="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/svage"
+        android:layout_alignBottom="@+id/aged"
+        android:layout_toEndOf="@+id/dobd"
+        android:layout_alignStart="@+id/svbirthplace" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="gender"
+        android:singleLine="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/svgender"
+        android:layout_alignBottom="@+id/genderd"
+        android:layout_toEndOf="@+id/genderd"
+        android:layout_alignStart="@+id/svage" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="caste"
+        android:singleLine="true"
+        android:id="@+id/svcaste"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_alignBottom="@+id/casted"
+        android:layout_toEndOf="@+id/casted"
+        android:layout_alignStart="@+id/svgender" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="religion"
+        android:singleLine="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/svreligion"
+        android:layout_alignBottom="@+id/religiond"
+        android:layout_toEndOf="@+id/scellnod" />
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="aadhar no"
+        android:singleLine="true"
+        android:id="@+id/svaadharno"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_alignBottom="@+id/aadharnod"
+        android:layout_toEndOf="@+id/scellnod" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="ssc year pass"
+        android:singleLine="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/svsscpassd"
+        android:layout_alignBottom="@+id/sscpassd"
+        android:layout_toEndOf="@+id/sscpassd" />
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="ssc marks"
+        android:singleLine="true"
+        android:id="@+id/svsscmarks"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_alignBottom="@+id/sscmarksd"
+        android:layout_toEndOf="@+id/sscmarksd" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="ssc aggregate"
+        android:singleLine="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/svsscpercent"
+        android:layout_alignBottom="@+id/sscpercentd"
+        android:layout_toEndOf="@+id/sscpercentd" />
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="ssc attempts"
+        android:singleLine="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/svsscattempt"
+        android:layout_alignBottom="@+id/sscattemptd"
+        android:layout_toEndOf="@+id/sscattemptd" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="inter year pass"
+        android:singleLine="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/svinteryearpass"
+        android:layout_alignBottom="@+id/interyearpassd"
+        android:layout_toEndOf="@+id/sscattemptd" />
+
+
+
+
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="inter marks"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:singleLine="true"
+        android:id="@+id/svintermarks"
+        android:layout_alignBottom="@+id/intermarksd"
+        android:layout_toEndOf="@+id/intermarksd" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="inter aggragate"
+        android:singleLine="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/svinterpercent"
+        android:layout_alignBottom="@+id/interpercentd"
+        android:layout_toEndOf="@+id/interpercentd" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="inter no.of attempts"
+        android:singleLine="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/svinterattempt"
+        android:layout_alignBottom="@+id/interattemptd"
+        android:layout_toEndOf="@+id/interattemptd" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="diploma year pass"
+        android:singleLine="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/svdiplomayearpass"
+        android:layout_alignBottom="@+id/diplomayearpassd"
+        android:layout_toEndOf="@+id/diplomayearpassd" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="diploma marks"
+        android:singleLine="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/svdiplomamarks"
+        android:layout_alignBottom="@+id/diplomamarksd"
+        android:layout_toEndOf="@+id/diplomamarksd" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="diploma aggragate"
+        android:singleLine="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/svdiplomapercent"
+        android:layout_alignBottom="@+id/diplomapercentd"
+        android:layout_toEndOf="@+id/diplomapercentd" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="diploma no.of attempts"
+        android:singleLine="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/svdiplomaattempt"
+        android:layout_alignBottom="@+id/diplomaattemptd"
+        android:layout_toEndOf="@+id/diplomaattemptd" />
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="I-year (year of passing)"
+        android:singleLine="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/svbtch1yearpass"
+        android:layout_alignBottom="@+id/btech1yearpassd"
+        android:layout_toEndOf="@+id/btech1yearpassd" />
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="I-year marks"
+        android:singleLine="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/svbtech1marks"
+        android:layout_alignBottom="@+id/btech1marksd"
+        android:layout_toEndOf="@+id/btech1marksd" />
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="I-year aggregate"
+        android:singleLine="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/svbtech1percent"
+        android:layout_alignBottom="@+id/btech1percentd"
+        android:layout_toEndOf="@+id/btech1percentd" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="I-year attempts"
+        android:singleLine="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/svbtech1attempt"
+        android:layout_alignBottom="@+id/btech1attemptd"
+        android:layout_toEndOf="@+id/btech1attemptd" />
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="I-year backlogs"
+        android:singleLine="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/svbtech1backlog"
+        android:layout_alignBottom="@+id/btech1backlogd"
+        android:layout_toEndOf="@+id/btech1backlogd" />
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="II-1-year (year of passing)"
+        android:singleLine="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/svbtech2yearpass"
+        android:layout_alignBottom="@+id/btech2yearpassd"
+        android:layout_toEndOf="@+id/btech2yearpassd" />
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="II-1-year marks"
+        android:singleLine="true"
+        android:id="@+id/svbtech2marks"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_alignBottom="@+id/btech2marksd"
+        android:layout_toEndOf="@+id/btech2marksd" />
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="II-1-year aggregate"
+        android:singleLine="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/svbtech2percent"
+        android:layout_alignBottom="@+id/btech2percentd"
+        android:layout_toEndOf="@+id/btech2percentd" />
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="II-1-year attempts"
+        android:singleLine="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/svbtech2attempt"
+        android:layout_alignBottom="@+id/btech2attemptd"
+        android:layout_toEndOf="@+id/btech2attemptd" />
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="II-1-year backlogs"
+        android:singleLine="true"
+        android:id="@+id/svbtech2backlog"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_alignBottom="@+id/btech2backlogd"
+        android:layout_toEndOf="@+id/btech2backlogd" />
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="II-2-year (year of passing)"
+        android:singleLine="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/svbtech2iyearpass"
+        android:layout_alignBottom="@+id/btech2iyearpassd"
+        android:layout_toEndOf="@+id/btech2iyearpassd" />
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="II-2-year marks"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:singleLine="true"
+        android:id="@+id/svbtech2imarks"
+        android:layout_alignBottom="@+id/btech2imarksd"
+        android:layout_toEndOf="@+id/btech2imarksd" />
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="II-2-year aggregate"
+        android:singleLine="true"
+        android:id="@+id/svbtech2ipercent"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_alignBottom="@+id/btech2ipercentd"
+        android:layout_toEndOf="@+id/btech2ipercentd" />
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="II-2-year attempts"
+        android:singleLine="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/svbtech2iattempt"
+        android:layout_alignBottom="@+id/btech2iattemptd"
+        android:layout_toEndOf="@+id/btech2iattemptd" />
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="II-2-year backlogs"
+        android:singleLine="true"
+        android:id="@+id/svbtech2ibacklog"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_alignBottom="@+id/btech2ibacklogd"
+        android:layout_toEndOf="@+id/btech2ibacklogd" />
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="III-1-year (year of passing)"
+        android:singleLine="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/svbtech3yearpass"
+        android:layout_alignBottom="@+id/btech3yearpassd"
+        android:layout_toEndOf="@+id/btech3yearpassd" />
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="III-1-year marks"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:singleLine="true"
+        android:id="@+id/svbtech3marks"
+        android:layout_alignBottom="@+id/btech3marksd"
+        android:layout_toEndOf="@+id/btech3marksd" />
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="III-1-year aggregate"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:singleLine="true"
+        android:id="@+id/svbtech3percent"
+        android:layout_alignBottom="@+id/btech3percentd"
+        android:layout_toEndOf="@+id/btech3percentd" />
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="III-1-year attempts"
+        android:singleLine="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/svbtech3attempt"
+        android:layout_alignBottom="@+id/btech3attemptd"
+        android:layout_toEndOf="@+id/btech3attemptd" />
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="III-1-year backlogs"
+        android:singleLine="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/svbtech3backlog"
+        android:layout_alignBottom="@+id/btech3backlogd"
+        android:layout_toEndOf="@+id/btech3backlogd" />
+
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="III-2-year (year of passing)"
+        android:singleLine="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/svbtech3iyearpass"
+        android:layout_alignBottom="@+id/btech3iyearpassd"
+        android:layout_toEndOf="@+id/btech3iyearpassd" />
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="III-2-year marks"
+        android:singleLine="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/svbtech3imarks"
+        android:layout_alignBottom="@+id/btech3imarksd"
+        android:layout_toEndOf="@+id/btech3imarksd" />
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="III-2-year aggregate"
+        android:singleLine="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/svbtech3ipercent"
+        android:layout_alignBottom="@+id/btech3ipercentd"
+        android:layout_toEndOf="@+id/btech3ipercentd" />
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="III-2-year attempts"
+        android:singleLine="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/svbtech3iattempt"
+        android:layout_alignBottom="@+id/btech3iattemptd"
+        android:layout_toEndOf="@+id/btech3iattemptd" />
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="III-2-year backlogs"
+        android:singleLine="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/svbtech3ibacklog"
+        android:layout_alignBottom="@+id/btech3ibacklogd"
+        android:layout_toEndOf="@+id/btech3ibacklogd" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="father name"
+        android:singleLine="true"
+        android:id="@+id/svfathername"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_alignBottom="@+id/fathernamed"
+        android:layout_toEndOf="@+id/fathernamed" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="occupation"
+        android:singleLine="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/svfocc"
+        android:layout_alignBottom="@+id/foccd"
+        android:layout_toEndOf="@+id/foccd" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="organization"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:singleLine="true"
+        android:id="@+id/svforg"
+        android:layout_alignBottom="@+id/forgd"
+        android:layout_toEndOf="@+id/forgd" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="designation"
+        android:singleLine="true"
+        android:id="@+id/svfdes"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_alignBottom="@+id/fdesd"
+        android:layout_toEndOf="@+id/fdesd" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="cellno"
+        android:singleLine="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/svfcellno"
+        android:layout_alignBottom="@+id/fcellnod"
+        android:layout_toEndOf="@+id/fcellnod" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="mother name"
+        android:singleLine="true"
+        android:id="@+id/svmothername"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_alignBottom="@+id/mothernamed"
+        android:layout_toEndOf="@+id/mothernamed" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="occupation"
+        android:singleLine="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/svmocc"
+        android:layout_alignBottom="@+id/moccd"
+        android:layout_toEndOf="@+id/moccd" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="organization"
+        android:singleLine="true"
+        android:id="@+id/svmorg"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_alignBottom="@+id/morgd"
+        android:layout_toEndOf="@+id/morgd" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="designation"
+        android:singleLine="true"
+        android:id="@+id/svmdes"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_alignBottom="@+id/mdesd"
+        android:layout_toEndOf="@+id/mdesd" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="cellno"
+        android:singleLine="true"
+        android:id="@+id/svmcellno"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_alignBottom="@+id/mcellnod"
+        android:layout_toEndOf="@+id/mcellnod" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Address"
+        android:singleLine="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/svaddress"
+        android:layout_alignBottom="@+id/addressd"
+        android:layout_toEndOf="@+id/addressd" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="state"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:singleLine="true"
+        android:id="@+id/svstate"
+        android:layout_alignBottom="@+id/stated"
+        android:layout_toEndOf="@+id/stated" />
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="pincode"
+        android:singleLine="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/svpincode"
+        android:layout_alignBottom="@+id/pincoded"
+        android:layout_toEndOf="@+id/pincoded" />
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="cellno"
+        android:singleLine="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/sv"
+        android:layout_alignBottom="@+id/scellnod"
+        android:layout_toEndOf="@+id/scellnod"
+        />
+
+
+
+
+
+
+</RelativeLayout>

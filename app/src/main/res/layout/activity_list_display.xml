@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Rollnum"
+        android:id="@+id/rrollno"
+        android:textSize="15dp"
+        android:layout_weight="0.6"
+        android:paddingRight="5dp"
+        android:layout_alignTop="@+id/total"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="name"
+        android:id="@+id/rname"
+        android:textSize="15dp"
+        android:layout_weight="1.0"
+        android:paddingRight="5dp"
+        android:layout_alignTop="@+id/total"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="email"
+        android:id="@+id/remail"
+        android:textSize="15dp"
+        android:layout_weight="1.10"
+        android:paddingRight="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_alignTop="@+id/total"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:focusable="false"
+        android:buttonTint="#ff6861"
+        android:clickable="false"
+
+        android:id="@+id/checkBox" />
+
+
+
+</LinearLayout>

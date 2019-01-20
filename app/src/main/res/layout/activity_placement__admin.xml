@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:background="#ffffff"
+  android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_height="fill_parent"
+    tools:context="com.rohan.admin.loginapp1.RegisterActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Placement Activity"
+        android:id="@+id/placement_txt"
+        android:textSize="25dp"
+        android:layout_marginTop="50dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+
+        <Button
+            android:onClick="placement"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="company information"
+            android:id="@+id/company"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/button_pressed"
+            android:layout_marginBottom="20dp"
+            android:textColor="#ffffff" />
+        <Button
+            android:onClick="placement"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="placed student details"
+            android:id="@+id/place_student_details"
+            android:background="@drawable/button_pressed"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="20dp"
+         />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Placement attendence status"
+            android:id="@+id/placement_attendence_status"
+            android:background="@drawable/button_pressed"
+            android:onClick="placement"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="20dp"
+            />
+        <Button
+            android:onClick="placement"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="update placed student details"
+            android:id="@+id/update_place_student_details"
+            android:background="@drawable/button_pressed"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="20dp"/>
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Placement attendence"
+            android:id="@+id/placement_attendence"
+            android:background="@drawable/button_pressed"
+            android:onClick="placement"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="20dp"
+            />
+        <Button
+            android:layout_width="fill_parent"
+            android:onClick="placement"
+            android:layout_height="wrap_content"
+            android:text="eligible criteria"
+            android:id="@+id/eligible_criteria"
+            android:background="@drawable/button_pressed"
+            android:textColor="#ffffff"
+          />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.rohan.admin.loginapp1.HomeActivity"
+   android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:background="#ffffff"
+    android:weightSum="1">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_action_login1"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FFffff"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="rollnum"
+        android:id="@+id/welcome_txt"
+        android:textSize="15dp"
+       android:layout_marginTop="30dp"
+        android:layout_toEndOf="@+id/roll"
+        android:layout_marginStart="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="branch"
+        android:id="@+id/branch"
+        android:textSize="15dp"
+
+        android:layout_alignTop="@+id/rname"
+        android:layout_alignStart="@+id/rname"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Name:"
+        android:id="@+id/Name"
+        android:textSize="15dp"
+     android:layout_marginTop="55dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/profile_image" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="sname"
+        android:id="@+id/rname"
+        android:textSize="15dp"
+        android:layout_alignBaseline="@+id/Name"
+        android:layout_alignBottom="@+id/Name"
+        android:layout_alignStart="@+id/welcome_txt" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Branch:"
+        android:id="@+id/BRANC"
+        android:textSize="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_alignBaseline="@+id/branch"
+        android:layout_alignBottom="@+id/branch"
+        android:layout_toEndOf="@+id/profile_image" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Rollnum:"
+        android:id="@+id/roll"
+        android:textSize="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_alignBaseline="@+id/welcome_txt"
+        android:layout_alignBottom="@+id/welcome_txt"
+        android:layout_toEndOf="@+id/profile_image" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/uploadstatus"
+        android:visibility="gone" />
+
+    <Button
+        android:text="View Full Profile"
+        android:layout_width="200dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_height="30dp"
+        android:layout_marginTop="14dp"
+        android:id="@+id/Myprofile"
+        android:layout_below="@+id/branch"
+        android:background="@drawable/button_all"
+        android:textAllCaps="false"
+        android:textSize="12dp"
+        android:textColor="#ff6861"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_alignStart="@+id/BRANC" />
+
+    <Button
+        android:id="@+id/training"
+        android:onClick="showGreeting"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_pressed"
+        android:text="Training"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:layout_below="@+id/Myprofile"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp" />
+
+    <Button
+        android:id="@+id/PLACEMENT"
+        android:onClick="showGreeting"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_pressed"
+        android:text="Placement"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:layout_below="@+id/training"
+        android:layout_toEndOf="@+id/uploadstatus"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:id="@+id/MYTRAINING"
+        android:onClick="showGreeting"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_pressed"
+        android:text="My Activities"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:layout_below="@+id/PLACEMENT"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp" />
+
+    <Button
+        android:id="@+id/reg_comp"
+        android:onClick="showGreeting"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_pressed"
+        android:text="Registered Companies"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/MYTRAINING"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout >
